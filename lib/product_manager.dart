@@ -15,12 +15,13 @@ class ProductManager extends StatefulWidget {
 }
 
 class _ProductManagerState extends State<ProductManager> {
+
+  final List<String> _products = [];
+
   void initState() {
     _products.add(widget.startingProduct);
     super.initState();
   }
-
-  final List<String> _products = [];
 
   void _addNewProduct(String productName) {
     setState(() {
